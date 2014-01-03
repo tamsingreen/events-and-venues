@@ -1,0 +1,106 @@
+* {
+	font-family: 'Telex', Arial, Verdana, sans-serif; 
+	color: #46464E; } 
+body {
+	margin: 0 auto; }
+#content {
+	overflow: auto;
+	clear: both; } /*to make the content div sit below the nav*/
+#nav, #content, #footer {
+	margin: 1%; }
+.column1, .column2, .column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%; }
+.column3 {
+	margin-right: 0px; }
+p.main-image {
+	width: 750px; 
+	margin: 0 auto; 
+	padding-top: 0.75em; 
+	font-size: 250%;
+	color: #EC1D25; 
+	text-align: center; }
+p.large-text {
+	color: #EC1D25;
+	font-size: 250%; 
+	padding: 0px 20px 0px 20px;
+	margin: 20px 0px 0px 0px; }
+p.small-text {
+	font-size: 150%;
+	padding: 0px 20px 0px 20px; 
+	margin: 20px 0px 60px 0px; }
+#nav, #section, #footer, #backissues {
+	padding: 0.5em 0;
+	width: 90%; 
+	margin: 0 auto;  
+	clear: both; }
+.article {	
+	margin-bottom: 1em; }
+#mainimage {
+	height: 450px;
+	background-image: url("images/high_st_op.jpg");
+	background-repeat: no-repeat;
+	background-position: center top; 
+	margin: 0 auto; } /*set mainimage to 100% width and centred*/
+.article, #footer {
+	background-color: #f2f2f2; }
+ul#menu {
+	padding: 15px;
+	text-align: right;}
+li#menu {
+	display: inline;
+	margin-right: 30px;
+	font-size: 150%; }
+ul#contents {
+	list-style-type: none;  
+	font-size: 120%; }
+li#contents {
+	position: relative;
+	left: 10px; }
+.menulogo {
+	float: left; 
+	width: 20%; }
+.menunav {
+	float: right; 
+	width: 80%; 
+	padding-top: 22px;
+	padding-bottom: 22px; }
+a.non-ul {
+	text-decoration: none; }
+.image-outline {
+	border: 1px solid DimGray;
+	z-index: 5; }
+/*box around the back issues section */
+#backissues {
+	clear: both; }
+/*formatting for each back issue box*/
+.backissue {
+	width: 260px;
+	margin: 0.5em; 
+	float: left; }
+.backissue img {
+	width: 200px;
+	height: 279px; }
+.align-left {
+	float: left;
+	margin-right: 15px; 
+	margin-bottom: 15px;
+	clear: both;
+	z-index: 5; }
+table {
+	width: 600px; }
+th {
+	font-size: 130%; }
+th, td {
+	padding: 7px 10px 10px 10px; 
+	text-align: center;}
+tr {
+	background-color: #efefef; }
+.hide {
+	visibility: hidden; }
+#footer {
+	text-align: center; }
+#nameerror, #emailerror, #detailserror {
+	color: red; 
+	font-size: 80% }
