@@ -2,8 +2,10 @@
 <html>
 		<head>
 				<title>Events and Venues Magazine - What's on in Leighton Buzzard and Linslade</title>
-				<link href="style.css" type="text/css" rel="stylesheet" />
+				<link href="../style.css" type="text/css" rel="stylesheet" />
 				<link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+				<script type='text/javascript' src='form.js'></script>
 				<script>
  					(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -14,7 +16,6 @@
 				</script>
 		</head>
 		<body>
-			<script type='text/javascript' src='formscript.js'></script>
 			<div id="nav">
 				<div class="menulogo"><a href="index.html"><img src="images/menu_logo_op.gif" alt="Events & Venues Magazine" title="Home" /></a></div>
 				<div class="menunav">
@@ -31,19 +32,22 @@
 				<div id="section">
 					<h1>Get in touch</h1>
 					<h2>We love to hear from our readers and advertisers</h2>
-					<h3>If you have an event for us to feature please fill in the form below.</h3>
-					<form method="POST" name="eventform" action="eventform.php" onsubmit="return validateForm()"> 
+					<h3>If you have an event for us to feature please fill in the form below. Please fill in all sections.</h3>
+					<form method="POST" name="eventform" action="eventform.php" onsubmit="return readyToSubmit()"> 
 						<p>
 							Your Name:<br>
 							<input type="text" name="name">
+							<span id="nameerror"></span>
 						</p>
 						<p>
 							Email Address:<br>
 							<input type="text" name="email">
+							<span id="emailerror"></span>
 						</p>
 						<p>
 							Details of the event:<br>
 							<textarea name="details" rows='10' cols='40'></textarea>
+							<span id="detailserror"></span>
 						</p>
 						<input type="submit" value="Submit"><br>
 					</form>
