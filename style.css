@@ -104,3 +104,6 @@ tr {
 #nameerror, #emailerror, #detailserror {
 	color: red; 
 	font-size: 80% }
+#atoz {
+	display: inline;
+	margin-left: 0.5em; }
